@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Component
-public class ProductServiceImpl implements ProductService {
+public class  ProductServiceImpl implements ProductService {
     @Autowired
   private ProductRepository productRepository;
 
@@ -33,7 +33,6 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product save(Product product) {
-        product.setVersion(1);
         return productRepository.save(product);
     }
 

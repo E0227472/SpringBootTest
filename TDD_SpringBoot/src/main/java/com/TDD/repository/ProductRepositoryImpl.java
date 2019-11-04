@@ -90,6 +90,6 @@ public class ProductRepositoryImpl implements ProductRepository {
     @Override
     public boolean delete(Long id) {
         // if deletion of one row successful, return 1 which is truthsy statement.
-        return jdbcTemplate.update("DELETE FROM Product WHERE id = ?, id") == 1;
+        return jdbcTemplate.update("DELETE FROM Product WHERE id = ?",id) == 1;
     }
 }

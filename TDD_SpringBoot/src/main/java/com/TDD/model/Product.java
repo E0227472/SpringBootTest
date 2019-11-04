@@ -6,7 +6,6 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "Product" )
 public class Product implements Serializable {
 
     // properties
